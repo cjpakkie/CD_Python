@@ -3,8 +3,8 @@
 def cointoss():
     tails = 0
     heads = 0
+    import random
     for num in range(1,5001):
-        import random
         random_num = random.random()
         x = random_num
         x_rounded = round(x)
