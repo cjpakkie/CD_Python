@@ -1,0 +1,29 @@
+*{
+    font-family: sans-serif;
+}
+
+#container{
+    text-align: center;
+}
+
+.wrong{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.right{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.answer{
+    margin-top: 100px;
+}
