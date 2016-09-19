@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, flash
 app= Flask(__name__)
+app.secret_key = 'thisissomesecretstuff'
 
 @app.route('/')
 def index():
@@ -13,5 +14,13 @@ def results():
     location = request.form['location']
     language = request.form['language']
     comment = request.form['comment']
-    return render_template('results.html', name = name, location = location, language = language, comment = comment)
+    if len(name) < 1 or len(comment) < 1:
+        flash('Name and comments cannot be empty.')
+        return redirect('/')
+    if len(comment) > 150:
+        flash("Comment cannot be greater than 150 characters.")
+        return redirect('/')
+    else:
+        return render_template('results.html', name = name, location = location, language = language, comment = comment)
+
 app.run(debug=True)

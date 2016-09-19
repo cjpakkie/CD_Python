@@ -8,6 +8,13 @@
         <h1>Dojo Survey</h1>
         <form action='/results' method='post'>
                 Name: <input type="text" name="name"><br>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <p>{{ message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
                 Dojo Location:
                 <select name="location">
                     {% for x in cities: %}
