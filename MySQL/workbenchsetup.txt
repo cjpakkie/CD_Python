@@ -1,0 +1,11 @@
+open MAMP
+preferences port 8889
+Start Servers
+open mysql workbench
+click add
+named connection 'hello'
+port 8889
+click ok
+double click
+password 'root'
+use twitter;

@@ -1,0 +1,14 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#container{
+    text-align: center;
+}
+
+.teenageturtle{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Disappering Ninja</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            {% if turtles == 'blue' %}
+                <img class="teenageturtle" src="{{ url_for('static', filename='img/Ninjas/leonardo.jpg') }}">
+                <h1>Leonardo</h1>
+            {% elif turtles == 'orange' %}
+                <img class="teenageturtle" src="{{ url_for('static', filename='img/Ninjas/michelangelo.jpg') }}">
+                <h1>Michelangelo</h1>
+            {% elif turtles == 'red' %}
+                <img class="teenageturtle" src="{{ url_for('static', filename='img/Ninjas/raphael.jpg') }}">
+                <h1>Raphael</h1>
+            {% elif turtles == 'orange' %}
+                <img class="teenageturtle" src="{{ url_for('static', filename='img/Ninjas/donatello.jpg') }}">
+                <h1>Donatello</h1>
+            {% elif turtles == 'april' %}
+                <img src="{{ url_for('static', filename='img/Ninjas/notapril.jpg') }}">
+            {% elif turtles == 'cowabunga' %}
+                <img class="teenageturtle" src="{{ url_for('static', filename='img/Ninjas/leonardo.jpg') }}">
+                <img class="teenageturtle" src="{{ url_for('static', filename='img/Ninjas/raphael.jpg') }}">
+                <img class="teenageturtle" src="{{ url_for('static', filename='img/Ninjas/michelangelo.jpg') }}">
+                <img class="teenageturtle" src="{{ url_for('static', filename='img/Ninjas/donatello.jpg') }}">
+                <h1>PIZZA FOR EVERYONE!</h1>
+            {% endif %}
+
+        </div>
+    </body>
+</html>
