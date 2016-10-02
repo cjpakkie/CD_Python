@@ -1,0 +1,36 @@
+.container{
+    text-align: center;
+}
+
+#invalid{
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: black 2px solid;
+    width: 300px;
+    text-align: center;
+    padding: 10px 0px;
+    margin-left: 480px;
+}
+
+h1{
+    font-size: 50px;
+    background-color: green;
+    border: black 2px solid;
+    width: 400px;
+    text-align: center;
+    padding: 10px 0px;
+    margin-left: 430px;
+}
+
+#inside {
+    display: inline-block;
+}
+#outside {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+#home {
+    margin-top: 50px;
+}
